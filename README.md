@@ -50,6 +50,7 @@ The data for this project is stored in CSV files located in the `data` directory
 ## Project Structure
 
 The project has the following structure 
+""" 
 ── .vscode/
 │   └── settings.json
 ├── .github/
@@ -79,5 +80,5 @@ The project has the following structure
     └── scripts/
         ├── __init__.py
         └── README.md
-
+"""
 
