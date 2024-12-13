@@ -1,84 +1,22 @@
-# Weather & Solar Dashboard
+ Conclusion
 
-This project is a Weather & Solar Dashboard built using Streamlit, Pandas, and Plotly. The dashboard allows users to select a city and a date to view weather and solar data, including solar irradiance, ambient temperature, relative humidity, wind speed, and module temperatures. Additionally, the project includes detailed data analysis such as correlation analysis, data cleaning, data quality checks, histograms, bubble charts, summary statistics, time series analysis, wind analysis, and temperature analysis.
+ Throughout this exploratory data analysis, we have taken several steps to understand the dataset better and derive meaningful insights. 
+ Here is a summary of the process we followed:
 
-## Features
+ 1. **Data Loading and Initial Inspection**: We started by loading the dataset and inspecting its structure, including the columns and data types. This helped us understand the basic layout and content of the data.
 
-- **City Selection**: Choose from a list of cities to view the corresponding weather and solar data.
-- **Date Selection**: Select a specific date to filter the data.
-- **Detailed Data Analysis**:
-  - **Correlation Analysis**: Understand relationships between different weather and solar parameters.
-  - **Data Cleaning**: Ensure the data is clean and ready for analysis.
-  - **Data Quality Check**: Verify the integrity and quality of the data.
-  - **Histograms and Bubble Charts**: Visualize data distributions and relationships.
-  - **Summary Statistics**: View comprehensive statistics of the filtered data.
-  - **Time Series Analysis**: Analyze trends and patterns over time.
-  - **Wind Analysis**: Detailed examination of wind speed and direction.
-  - **Temperature Analysis**: In-depth analysis of ambient and module temperatures.
-- **Solar Irradiance Plot**: Visualize Global, Direct, and Diffuse Irradiance over time.
-- **Temperature and Humidity Plot**: Visualize Ambient Temperature and Relative Humidity over time.
-- **Wind Data Plot**: Visualize Wind Speed and Gusts over time.
-- **Module Temperatures Plot**: Visualize the temperatures of solar modules A and B over time.
-- **Raw Data Display**: Optionally display the raw data in a table format.
+ 2. **Data Cleaning and Preprocessing**: We performed data cleaning tasks such as handling missing values, converting data types, and extracting relevant information from columns. This step ensured that our data was in a suitable format for analysis.
 
-## Installation
+ 3. **Descriptive Statistics**: We calculated descriptive statistics for various columns to get an overview of the data distribution. This included measures such as count, mean, standard deviation, minimum, and maximum values.
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/kebaHailu/TenX.git
-    cd TenX
-    ```
+ 4. **Publisher Analysis**: We analyzed the distribution of articles by different publishers. This involved counting the number of articles published by each publisher and identifying the top publishers in the dataset.
 
-2. Install the required dependencies:
-    ```bash
-    pip install -r src/requriment.txt
-    ```
+ 5. **Headline Length Analysis**: We examined the length of headlines and calculated the mean headline length for the top publishers. This helped us understand the variation in headline lengths across different publishers.
 
-## Usage
+ 6. **Temporal Analysis**: We analyzed the publication dates to identify trends over time. This included examining the number of articles published on different days of the week and over the years.
 
-1. Run the Streamlit application:
-    ```bash
-    streamlit run src/app/main.py
-    ```
+ 7. **Domain Analysis**: We extracted domains from email addresses used as publisher names to identify unique domains and their contribution to the dataset. This provided insights into the organizations contributing to the dataset.
 
-2. Open your web browser and navigate to `http://localhost:8501` to view the dashboard.
+8. **Visualization**: We created various plots to visualize the data and make the insights more accessible. This included bar plots for publisher counts, headline lengths, and domain counts.
 
-## Data
-
-The data for this project is stored in CSV files located in the `data` directory. Each city has its own CSV file containing weather and solar data.
-
-## Project Structure
-
-The project has the following structure 
-```
-── .vscode/
-│   └── settings.json
-├── .github/
-│   └── workflows
-│       ├── unittests.yml
-├── .gitignore
-├── requirements.txt
-├── README.md
-|------ src/
-    ├── notebooks/
-    │   ├── __init__.py
-    │   ├── Correlation_analysis.ipynb
-    │   ├── Data_cleaning.ipynb
-    │   ├── Data_quality_check.ipynb
-    │   ├── Histograms_and_bubble_chart.ipynb
-    │   ├── Summary_statistics.ipynb
-    │   ├── Time_series_analysis.ipynb
-    │   ├── Wind_and_temp_analysis.ipynb
-    │   └── README.md
-    ├── app/
-    │   ├── __init__.py
-    |   ├── main.py
-    |   ├── utils.py
-    │   └── README.md
-    ├── tests/
-    │   ├── __init__.py
-    └── scripts/
-        ├── __init__.py
-        └── README.md
-```
-
+Overall, this exploratory data analysis has provided a comprehensive understanding of the dataset, highlighting key patterns and trends. The insights gained from this analysis can inform further research and decision-making processes.
