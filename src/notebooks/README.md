@@ -1,21 +1,39 @@
-# Data Analysis Notebooks
+Minimum Essential To Do
 
-This directory contains Jupyter notebooks that provide detailed data analysis for the Weather & Solar Dashboard project. Each notebook focuses on a specific aspect of the data analysis process, including correlation analysis, data cleaning, data quality checks, histograms, bubble charts, summary statistics, time series analysis, wind analysis, and temperature analysis.
 
-## Notebooks
 
-- **Correlation_analysis.ipynb**: This notebook explores the relationships between different weather and solar parameters using correlation analysis. It helps in understanding how different variables are related to each other.
+Descriptive Statistics:
+Obtain basic statistics for textual lengths (like headline length).
+Count the number of articles per publisher to identify which publishers are most active.
+Analyze the publication dates to see trends over time, such as increased news frequency on particular days or during specific events.
+Text Analysis(Sentiment analysis & Topic Modeling):
+Perform sentiment analysis on headlines to gauge the sentiment (positive, negative, neutral) associated with the news.
+Use natural language processing to identify common keywords or phrases, potentially extracting topics or significant events (like "FDA approval", "price target", etc.).
+Time Series Analysis:
+How does the publication frequency vary over time? Are there spikes in article publications related to specific market events?
+Analysis of publishing times might reveal if there’s a specific time when most news is released, which could be crucial for traders and automated trading systems.
+Publisher Analysis:
+Which publishers contribute most to the news feed? Is there a difference in the type of news they report?
+If email addresses are used as publisher names, identify unique domains to see if certain organizations contribute more frequently.
+Task 2: Quantitative analysis using pynance and TaLib
+Tasks:
+Use additional finance data
+Load and prepare the data.
+Load your stock price data into a pandas DataFrame. Ensure your data includes columns like Open, High, Low, Close, and Volume.
+Apply Analysis Indicators with TA-Lib
+You can use TA-Lib to calculate various technical indicators such as moving averages, RSI (Relative Strength Index), and MACD (Moving Average Convergence Divergence)
+Use PyNance for Financial Metrics
+Visualize the Data
+Create visualizations to better understand the data and the impact of different indicators on the stock price.
+KPIs
+Proactivity to self-learn - sharing references.
+Accuracy of indicators
+Completeness of Data Analysis
+Minimum Essential To Do:
 
-- **Data_cleaning.ipynb**: This notebook focuses on cleaning the raw data to ensure it is ready for analysis. It includes steps such as handling missing values, correcting data types, and removing outliers.
-
-- **Data_quality_check.ipynb**: This notebook performs various data quality checks to verify the integrity and quality of the data. It includes checks for missing values, duplicate records, and consistency of data.
-
-- **Histograms_and_bubble_chart.ipynb**: This notebook provides visualizations of data distributions and relationships using histograms and bubble charts. These visualizations help in understanding the distribution and correlation of different variables.
-
-- **Summary_statistics.ipynb**: This notebook provides comprehensive summary statistics of the data. It includes measures such as mean, median, standard deviation, and percentiles for different variables.
-
-- **Time_series_analysis.ipynb**: This notebook analyzes trends and patterns over time using time series analysis. It helps in understanding how different variables change over time and identifying any seasonal patterns.
-
-- **Wind_and_temp_analysis.ipynb**: This notebook provides a detailed examination of wind speed, direction, and temperature data. It includes visualizations and analysis of wind patterns and temperature variations.
-
-Each notebook is designed to be self-contained and provides detailed explanations and code for performing the respective analysis. These notebooks serve as a valuable resource for understanding and analyzing the weather and solar data used in the dashboard.
+Merge the necessary branches from task-1 into the main branch using a Pull Request (PR)
+Create at least one new branch called "task-2" for the ongoing development of the dashboard.
+Commit your work with a descriptive commit message.
+Prepare Your Data
+Calculate Basic Technical Indicators
+Visualize Data
