@@ -1,22 +1,70 @@
- Conclusion
+# TellCo Telecom Analysis Dashboard
 
- Throughout this exploratory data analysis, we have taken several steps to understand the dataset better and derive meaningful insights. 
- Here is a summary of the process we followed:
+This project is a TellCo Telecom Analysis Dashboard built using Streamlit, Pandas, and Plotly. The dashboard allows users to explore a telecommunication dataset that contains valuable information about customer activities on the network. Users can analyze opportunities for growth and make informed recommendations regarding the potential acquisition of TellCo, a mobile service provider in the Republic of Pefkakia. The analysis includes user engagement, experience, and satisfaction metrics, as well as detailed data visualizations.
 
- 1. **Data Loading and Initial Inspection**: We started by loading the dataset and inspecting its structure, including the columns and data types. This helped us understand the basic layout and content of the data.
+## Features
 
- 2. **Data Cleaning and Preprocessing**: We performed data cleaning tasks such as handling missing values, converting data types, and extracting relevant information from columns. This step ensured that our data was in a suitable format for analysis.
+- **User Overview Analysis**: Gain insights into customer behavior, including handset usage and application engagement.
+- **User Engagement Metrics**: Track user activity through session frequency, duration, and total traffic.
+- **User Experience Analysis**: Evaluate network performance metrics such as TCP retransmission and throughput.
+- **Satisfaction Analysis**: Assess customer satisfaction based on engagement and experience scores.
+- **Interactive Visualizations**: Utilize advanced plotting techniques to visualize key performance indicators and trends.
+- **Data Quality Checks**: Ensure the integrity and quality of the dataset through thorough analysis.
+- **Raw Data Display**: Optionally display the raw telecommunication data in a table format for detailed examination.
 
- 3. **Descriptive Statistics**: We calculated descriptive statistics for various columns to get an overview of the data distribution. This included measures such as count, mean, standard deviation, minimum, and maximum values.
+## Installation
 
- 4. **Publisher Analysis**: We analyzed the distribution of articles by different publishers. This involved counting the number of articles published by each publisher and identifying the top publishers in the dataset.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/kebaHailu/TenX.git
+    cd TenX
+    ```
 
- 5. **Headline Length Analysis**: We examined the length of headlines and calculated the mean headline length for the top publishers. This helped us understand the variation in headline lengths across different publishers.
+2. Install the required dependencies:
+    ```bash
+    pip install -r src/requirements.txt
+    ```
 
- 6. **Temporal Analysis**: We analyzed the publication dates to identify trends over time. This included examining the number of articles published on different days of the week and over the years.
+## Usage
 
- 7. **Domain Analysis**: We extracted domains from email addresses used as publisher names to identify unique domains and their contribution to the dataset. This provided insights into the organizations contributing to the dataset.
+1. Run the Streamlit application:
+    ```bash
+    streamlit run src/app/main.py
+    ```
 
-8. **Visualization**: We created various plots to visualize the data and make the insights more accessible. This included bar plots for publisher counts, headline lengths, and domain counts.
+2. Open your web browser and navigate to `http://localhost:8501` to view the dashboard.
 
-Overall, this exploratory data analysis has provided a comprehensive understanding of the dataset, highlighting key patterns and trends. The insights gained from this analysis can inform further research and decision-making processes.
+## Data
+
+The data for this project is sourced from a month's aggregation of xDR records and is stored in a PostgreSQL database. The dataset includes customer activities and can be analyzed to identify growth opportunities for TellCo.
+
+## Project Structure
+
+The project has the following structure 
+```
+── .vscode/
+│   └── settings.json
+├── .github/
+│   └── workflows
+│       ├── unittests.yml
+├── .gitignore
+├── requirements.txt
+├── README.md
+|------ src/
+    ├── notebooks/
+    │   ├── __init__.py
+    │   ├── user_engagement_analysis.ipynb
+    │   ├── user_experiance_analysis.ipynb
+    │   ├── user_overview_analysis.ipynb
+    │   └── user_satisfaction_analysis.ipynb
+    ├── app/
+    │   └── __init__.py
+    ├── tests/
+    │   ├── __init__.py
+    └── scripts/
+        ├── __init__.py
+        ├── plot.py
+        ├── utils.py
+        └── README.md
+```
+
