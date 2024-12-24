@@ -1,25 +1,16 @@
-# Weather & Solar Dashboard
+# TellCo Telecom Analysis Dashboard
 
-This project is a Weather & Solar Dashboard built using Streamlit, Pandas, and Plotly. The dashboard allows users to select a city and a date to view weather and solar data, including solar irradiance, ambient temperature, relative humidity, wind speed, and module temperatures. Additionally, the project includes detailed data analysis such as correlation analysis, data cleaning, data quality checks, histograms, bubble charts, summary statistics, time series analysis, wind analysis, and temperature analysis.
+This project is a TellCo Telecom Analysis Dashboard built using Streamlit, Pandas, and Plotly. The dashboard allows users to explore a telecommunication dataset that contains valuable information about customer activities on the network. Users can analyze opportunities for growth and make informed recommendations regarding the potential acquisition of TellCo, a mobile service provider in the Republic of Pefkakia. The analysis includes user engagement, experience, and satisfaction metrics, as well as detailed data visualizations.
 
 ## Features
 
-- **City Selection**: Choose from a list of cities to view the corresponding weather and solar data.
-- **Date Selection**: Select a specific date to filter the data.
-- **Detailed Data Analysis**:
-  - **Correlation Analysis**: Understand relationships between different weather and solar parameters.
-  - **Data Cleaning**: Ensure the data is clean and ready for analysis.
-  - **Data Quality Check**: Verify the integrity and quality of the data.
-  - **Histograms and Bubble Charts**: Visualize data distributions and relationships.
-  - **Summary Statistics**: View comprehensive statistics of the filtered data.
-  - **Time Series Analysis**: Analyze trends and patterns over time.
-  - **Wind Analysis**: Detailed examination of wind speed and direction.
-  - **Temperature Analysis**: In-depth analysis of ambient and module temperatures.
-- **Solar Irradiance Plot**: Visualize Global, Direct, and Diffuse Irradiance over time.
-- **Temperature and Humidity Plot**: Visualize Ambient Temperature and Relative Humidity over time.
-- **Wind Data Plot**: Visualize Wind Speed and Gusts over time.
-- **Module Temperatures Plot**: Visualize the temperatures of solar modules A and B over time.
-- **Raw Data Display**: Optionally display the raw data in a table format.
+- **User Overview Analysis**: Gain insights into customer behavior, including handset usage and application engagement.
+- **User Engagement Metrics**: Track user activity through session frequency, duration, and total traffic.
+- **User Experience Analysis**: Evaluate network performance metrics such as TCP retransmission and throughput.
+- **Satisfaction Analysis**: Assess customer satisfaction based on engagement and experience scores.
+- **Interactive Visualizations**: Utilize advanced plotting techniques to visualize key performance indicators and trends.
+- **Data Quality Checks**: Ensure the integrity and quality of the dataset through thorough analysis.
+- **Raw Data Display**: Optionally display the raw telecommunication data in a table format for detailed examination.
 
 ## Installation
 
@@ -31,7 +22,7 @@ This project is a Weather & Solar Dashboard built using Streamlit, Pandas, and P
 
 2. Install the required dependencies:
     ```bash
-    pip install -r src/requriment.txt
+    pip install -r src/requirements.txt
     ```
 
 ## Usage
@@ -45,7 +36,7 @@ This project is a Weather & Solar Dashboard built using Streamlit, Pandas, and P
 
 ## Data
 
-The data for this project is stored in CSV files located in the `data` directory. Each city has its own CSV file containing weather and solar data.
+The data for this project is sourced from a month's aggregation of xDR records and is stored in a PostgreSQL database. The dataset includes customer activities and can be analyzed to identify growth opportunities for TellCo.
 
 ## Project Structure
 
@@ -62,23 +53,18 @@ The project has the following structure
 |------ src/
     ├── notebooks/
     │   ├── __init__.py
-    │   ├── Correlation_analysis.ipynb
-    │   ├── Data_cleaning.ipynb
-    │   ├── Data_quality_check.ipynb
-    │   ├── Histograms_and_bubble_chart.ipynb
-    │   ├── Summary_statistics.ipynb
-    │   ├── Time_series_analysis.ipynb
-    │   ├── Wind_and_temp_analysis.ipynb
-    │   └── README.md
+    │   ├── user_engagement_analysis.ipynb
+    │   ├── user_experiance_analysis.ipynb
+    │   ├── user_overview_analysis.ipynb
+    │   └── user_satisfaction_analysis.ipynb
     ├── app/
-    │   ├── __init__.py
-    |   ├── main.py
-    |   ├── utils.py
-    │   └── README.md
+    │   └── __init__.py
     ├── tests/
     │   ├── __init__.py
     └── scripts/
         ├── __init__.py
+        ├── plot.py
+        ├── utils.py
         └── README.md
 ```
 
